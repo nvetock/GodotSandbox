@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi5gblpcpxhc5"]
+
+[ext_resource type="TileSet" uid="uid://c44olapqoxcwl" path="res://scenes/tilemap/terrain_tilemap.tres" id="1_5ok85"]
+
+[node name="TileMapLayer" type="TileMapLayer"]
+y_sort_enabled = true
+texture_filter = 1
+tile_set = ExtResource("1_5ok85")
+collision_visibility_mode = 1

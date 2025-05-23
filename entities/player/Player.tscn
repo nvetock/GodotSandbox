@@ -354,7 +354,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_73u1m"]
-radius = 8.0
+radius = 7.0
 height = 18.0
 
 [node name="Player" type="CharacterBody2D"]
@@ -366,3 +366,5 @@ animation = &"idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_73u1m")
+
+[node name="Camera2D" type="Camera2D" parent="."]

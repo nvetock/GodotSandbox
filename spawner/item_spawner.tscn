@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3b2s7pvjhjvl"]
+
+[ext_resource type="Script" uid="uid://b7endtjc6pvnh" path="res://spawner/item_spawner.gd" id="1_o2a0g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjch1"]
+size = Vector2(364, 196)
+
+[node name="ItemSpawner" type="Node2D"]
+script = ExtResource("1_o2a0g")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_pjch1")

@@ -58,15 +58,15 @@ func get_animation_prefix(direction: Vector2, is_sprint: bool) -> String:
 		return "idle"
 
 func get_animation_suffix(direction: Vector2) -> String:
-	if abs(last_facing_direction.x) > abs(last_facing_direction.y):
-		return "_right" if last_facing_direction.x > 0 else "_left"
+	if abs(direction.x) > abs(direction.y):
+		return "_right" if direction.x > 0 else "_left"
 	else:
-		return "_down" if last_facing_direction.y > 0 else "_up"
+		return "_down" if direction.y > 0 else "_up"
 
 func update_animation(direction: Vector2, sprint_toggle: bool) -> void:
 	
 	var anim_prefix = get_animation_prefix(direction, sprint_toggle)
-	var anim_suffix = get_animation_suffix(direction)
+	var anim_suffix = get_animation_suffix(last_facing_direction)
 	
 	$AnimatedSprite2D.animation = anim_prefix + anim_suffix
 	$AnimatedSprite2D.play()

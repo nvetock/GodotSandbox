@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0pbl8wb0ifq6"]
+
+[ext_resource type="Script" uid="uid://ce7v6l1ngdlqt" path="res://entities/pickups/item_godot.gd" id="1_4ec01"]
+[ext_resource type="Texture2D" uid="uid://bmffex8ut5b05" path="res://icon.svg" id="2_l5fq4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aq57t"]
+size = Vector2(14, 14)
+
+[node name="Item_godot" type="Area2D"]
+script = ExtResource("1_4ec01")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_l5fq4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_aq57t")

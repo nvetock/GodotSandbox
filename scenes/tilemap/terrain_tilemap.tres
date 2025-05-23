@@ -100,7 +100,6 @@ texture = ExtResource("1_g0c4p")
 6:3/0 = 0
 6:3/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_qiklq")
 7:3/0 = 0
-7:3/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_qiklq")
 8:3/0 = 0
 8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:3/0 = 0

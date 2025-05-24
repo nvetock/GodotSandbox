@@ -58,10 +58,11 @@ func spawner() -> void:
 ## @param totalArea: The shape's size as a Vector2
 func find_random_spawn_location(totalArea: Vector2) -> Vector2:
 	var top_left_vertex := -totalArea * 0.5
+	var top_mid_vertex := Vector2(top_left_vertex.x + (totalArea.x / 2), top_left_vertex.y)
 	var bot_right_vertex := totalArea * 0.5
 	
-	var random_x_spawn = randf_range(top_left_vertex.x, bot_right_vertex.x)
-	var random_y_spawn = randf_range(top_left_vertex.y, bot_right_vertex.y)
+	var random_x_spawn = randf_range(top_mid_vertex.x, bot_right_vertex.x)
+	var random_y_spawn = randf_range(top_mid_vertex.y, bot_right_vertex.y)
 	
 	return global_position + Vector2(random_x_spawn, random_y_spawn)
 

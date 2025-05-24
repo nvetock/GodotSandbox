@@ -633,16 +633,15 @@ animations = [{
 radius = 7.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x1ldl"]
-radius = 50.0
+radius = 24.0208
 
-[node name="Slime" type="Area2D"]
+[node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_imm4b")
-speed = null
-debug_dir = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7xbm0")
-animation = &"idle_down"
+animation = &"attack_down"
+frame_progress = 0.725463
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_hh00s")
@@ -651,6 +650,3 @@ shape = SubResource("CircleShape2D_hh00s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectRadius"]
 shape = SubResource("CircleShape2D_x1ldl")
-
-[connection signal="area_entered" from="DetectRadius" to="." method="_on_DetectRadius_area_entered"]
-[connection signal="area_exited" from="DetectRadius" to="." method="_on_DetectRadius_area_exited"]

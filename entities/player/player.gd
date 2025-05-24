@@ -10,10 +10,13 @@ var last_facing_direction: Vector2 = Vector2.ZERO
 
 var is_sprinting: bool = false
 
+@onready var health := $HealthComponent
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	last_facing_direction = Vector2.DOWN
+	health.health_changed.connect(_on_health_change)
+	health.died.connect(_on_death)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -63,10 +66,39 @@ func get_animation_suffix(direction: Vector2) -> String:
 	else:
 		return "_down" if direction.y > 0 else "_up"
 
-func update_animation(direction: Vector2, sprint_toggle: bool) -> void:
+func update_animation(direction: Vector2, sprint_toggle: bool, prefix_override: bool = false, prefix_override_path: String = "", full_override: bool = false, full_override_path = "") -> void:
+	if full_override:
+		# Override to be utilized if animations have no 'facing path' and will throw an error otherwise
+		$AnimatedSprite2D.animation = full_override_path
+		$AnimatedSprite2D.play()
+		return
 	
-	var anim_prefix = get_animation_prefix(direction, sprint_toggle)
+	var anim_prefix = ""
+	
+	if not prefix_override:
+		anim_prefix = get_animation_prefix(direction, sprint_toggle)
+	else:
+		# Override that manually sets a prefix path, this will be concat with a facing direction suffix
+		if prefix_override_path == "":
+			push_error("override prefix cannot be null")
+	
+		anim_prefix = prefix_override_path
+	
 	var anim_suffix = get_animation_suffix(last_facing_direction)
 	
 	$AnimatedSprite2D.animation = anim_prefix + anim_suffix
 	$AnimatedSprite2D.play()
+
+
+
+
+func _on_health_change(new_health: int) -> void:
+	print(new_health)
+	print(health.current_health)
+	
+	if new_health < health.current_health:
+		update_animation(last_facing_direction, false, true, "hurt")
+		await get_tree().create_timer(0.1).timeout
+
+func _on_death() -> void:
+	GameManager.game_over()

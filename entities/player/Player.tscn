@@ -1,31 +1,55 @@
-[gd_scene load_steps=76 format=3 uid="uid://bkrgqqpe4wr6a"]
+[gd_scene load_steps=101 format=3 uid="uid://bkrgqqpe4wr6a"]
 
 [ext_resource type="Script" uid="uid://6al5mksnryof" path="res://entities/player/player.gd" id="1_al50v"]
 [ext_resource type="Texture2D" uid="uid://d22utxiqwvkhs" path="res://resources/sprites/Player/idle/orc1_front_idle1.png" id="1_vqxe2"]
 [ext_resource type="Texture2D" uid="uid://brlf50pgx8cou" path="res://resources/sprites/Player/idle/orc1_front_idle2.png" id="2_al50v"]
+[ext_resource type="Texture2D" uid="uid://d4b3r4thjenfs" path="res://resources/sprites/Player/hurt/orc1_front_hurt1.png" id="2_b8fho"]
 [ext_resource type="Texture2D" uid="uid://bjx30s2icvqgq" path="res://resources/sprites/Player/idle/orc1_front_idle3.png" id="3_lglog"]
+[ext_resource type="Texture2D" uid="uid://dlgybhiqgp5or" path="res://resources/sprites/Player/hurt/orc1_front_hurt2.png" id="3_t4ot1"]
 [ext_resource type="Texture2D" uid="uid://droopyxjgpyop" path="res://resources/sprites/Player/idle/orc1_front_idle4.png" id="4_14gyu"]
+[ext_resource type="Texture2D" uid="uid://d1ka3oebiaxte" path="res://resources/sprites/Player/hurt/orc1_front_hurt3.png" id="4_sktj0"]
+[ext_resource type="Texture2D" uid="uid://c87s1egu5ndc7" path="res://resources/sprites/Player/hurt/orc1_front_hurt4.png" id="5_jjyyb"]
 [ext_resource type="Texture2D" uid="uid://dx05bnhjlqr1t" path="res://resources/sprites/Player/idle/orc1_left_idle1.png" id="5_ve7i4"]
 [ext_resource type="Texture2D" uid="uid://c1ue42y34cpui" path="res://resources/sprites/Player/idle/orc1_left_idle2.png" id="6_63s5m"]
+[ext_resource type="Texture2D" uid="uid://47dbmqximh6r" path="res://resources/sprites/Player/hurt/orc1_front_hurt5.png" id="6_w1h7c"]
+[ext_resource type="Texture2D" uid="uid://b3stqi1ut2ebp" path="res://resources/sprites/Player/hurt/orc1_front_hurt6.png" id="7_26v87"]
 [ext_resource type="Texture2D" uid="uid://o28affu5yhjj" path="res://resources/sprites/Player/idle/orc1_left_idle3.png" id="7_apuii"]
 [ext_resource type="Texture2D" uid="uid://bkcu4gruee2kt" path="res://resources/sprites/Player/idle/orc1_left_idle4.png" id="8_mayvl"]
+[ext_resource type="Texture2D" uid="uid://cdwc1vcfusx5h" path="res://resources/sprites/Player/hurt/orc1_left_hurt1.png" id="8_y80v1"]
 [ext_resource type="Texture2D" uid="uid://kerqa5ged6c0" path="res://resources/sprites/Player/idle/orc1_right_idle1.png" id="9_4u56j"]
+[ext_resource type="Texture2D" uid="uid://nhmnj5iabdfy" path="res://resources/sprites/Player/hurt/orc1_left_hurt2.png" id="9_k7l58"]
+[ext_resource type="Texture2D" uid="uid://5c1oyh6bdc1k" path="res://resources/sprites/Player/hurt/orc1_left_hurt3.png" id="10_217j1"]
 [ext_resource type="Texture2D" uid="uid://b54r4gp33bwia" path="res://resources/sprites/Player/idle/orc1_right_idle2.png" id="10_ssjg6"]
+[ext_resource type="Texture2D" uid="uid://brbgg1x1mnk2y" path="res://resources/sprites/Player/hurt/orc1_left_hurt4.png" id="11_6ymy7"]
 [ext_resource type="Texture2D" uid="uid://bgnhgvsxg12m1" path="res://resources/sprites/Player/idle/orc1_right_idle3.png" id="11_finpo"]
+[ext_resource type="Texture2D" uid="uid://bg8rtxit37ppd" path="res://resources/sprites/Player/hurt/orc1_left_hurt5.png" id="12_deml1"]
 [ext_resource type="Texture2D" uid="uid://pq7fhf6mhhmt" path="res://resources/sprites/Player/idle/orc1_right_idle4.png" id="12_vwcij"]
+[ext_resource type="Texture2D" uid="uid://b5v6oig54w7mg" path="res://resources/sprites/Player/hurt/orc1_left_hurt6.png" id="13_a6nhp"]
 [ext_resource type="Texture2D" uid="uid://6wyli6hau6lw" path="res://resources/sprites/Player/idle/orc1_back_idle1.png" id="13_i23uw"]
+[ext_resource type="Texture2D" uid="uid://b5dawgx6pyeua" path="res://resources/sprites/Player/hurt/orc1_right_hurt1.png" id="14_1axsf"]
 [ext_resource type="Texture2D" uid="uid://o0j75e6k3h24" path="res://resources/sprites/Player/idle/orc1_back_idle2.png" id="14_vranw"]
 [ext_resource type="Texture2D" uid="uid://d3l7ctxkt5kxv" path="res://resources/sprites/Player/idle/orc1_back_idle3.png" id="15_1fngl"]
+[ext_resource type="Texture2D" uid="uid://bciya5v4env5q" path="res://resources/sprites/Player/hurt/orc1_right_hurt2.png" id="15_tbn02"]
+[ext_resource type="Texture2D" uid="uid://cg5q7tj28bb10" path="res://resources/sprites/Player/hurt/orc1_right_hurt3.png" id="16_47873"]
 [ext_resource type="Texture2D" uid="uid://d4ffa1nkovxk0" path="res://resources/sprites/Player/idle/orc1_back_idle4.png" id="16_erasv"]
+[ext_resource type="Texture2D" uid="uid://cko50k1tvi4ns" path="res://resources/sprites/Player/hurt/orc1_right_hurt4.png" id="17_oukap"]
 [ext_resource type="Texture2D" uid="uid://cip6gbwpnubic" path="res://resources/sprites/Player/run/orc1_front_run1.png" id="17_ylru2"]
 [ext_resource type="Texture2D" uid="uid://cv0n321j0m1tv" path="res://resources/sprites/Player/run/orc1_front_run2.png" id="18_71y6j"]
+[ext_resource type="Texture2D" uid="uid://kc36i33dg7td" path="res://resources/sprites/Player/hurt/orc1_right_hurt5.png" id="18_bqo07"]
+[ext_resource type="Texture2D" uid="uid://di1ymivpq25fh" path="res://resources/sprites/Player/hurt/orc1_right_hurt6.png" id="19_6aeuy"]
 [ext_resource type="Texture2D" uid="uid://clynmjs20ws46" path="res://resources/sprites/Player/run/orc1_front_run3.png" id="19_8yv7r"]
+[ext_resource type="Texture2D" uid="uid://bnw6ftxd8dio8" path="res://resources/sprites/Player/hurt/orc1_back_hurt1.png" id="20_f4t0y"]
 [ext_resource type="Texture2D" uid="uid://bthnxcfyjxuo2" path="res://resources/sprites/Player/run/orc1_front_run4.png" id="20_oqk1c"]
+[ext_resource type="Texture2D" uid="uid://dx0tcnie0wbu8" path="res://resources/sprites/Player/hurt/orc1_back_hurt2.png" id="21_dogdd"]
 [ext_resource type="Texture2D" uid="uid://cc8d6juflgwjb" path="res://resources/sprites/Player/run/orc1_front_run5.png" id="21_l6abx"]
 [ext_resource type="Texture2D" uid="uid://cpstxu5e773id" path="res://resources/sprites/Player/run/orc1_front_run6.png" id="22_3lwq1"]
+[ext_resource type="Texture2D" uid="uid://cfb6bpdapbga5" path="res://resources/sprites/Player/hurt/orc1_back_hurt3.png" id="22_5mhmc"]
+[ext_resource type="Texture2D" uid="uid://bef726briyjqe" path="res://resources/sprites/Player/hurt/orc1_back_hurt4.png" id="23_bj8dl"]
 [ext_resource type="Texture2D" uid="uid://dot65w1co6fb2" path="res://resources/sprites/Player/run/orc1_front_run7.png" id="23_vrkxj"]
+[ext_resource type="Texture2D" uid="uid://dnrwvoviwe44x" path="res://resources/sprites/Player/hurt/orc1_back_hurt5.png" id="24_35r23"]
 [ext_resource type="Texture2D" uid="uid://lm7i1s7jyt7t" path="res://resources/sprites/Player/run/orc1_front_run8.png" id="24_gr1fn"]
 [ext_resource type="Texture2D" uid="uid://c6iec6r1pp7q7" path="res://resources/sprites/Player/run/orc1_left_run1.png" id="25_7btl4"]
+[ext_resource type="Texture2D" uid="uid://nm6hwcfsshyk" path="res://resources/sprites/Player/hurt/orc1_back_hurt6.png" id="25_jn6hw"]
 [ext_resource type="Texture2D" uid="uid://c8p0fx3eovx8n" path="res://resources/sprites/Player/run/orc1_left_run2.png" id="26_5ykhh"]
 [ext_resource type="Texture2D" uid="uid://dweixjg0qdvku" path="res://resources/sprites/Player/run/orc1_left_run3.png" id="27_b8fho"]
 [ext_resource type="Texture2D" uid="uid://ch6mkqa20cd80" path="res://resources/sprites/Player/run/orc1_left_run4.png" id="28_t4ot1"]
@@ -73,9 +97,102 @@
 [ext_resource type="Texture2D" uid="uid://vrejekhcm4fr" path="res://resources/sprites/Player/walk/orc1_back_walk4.png" id="70_vx015"]
 [ext_resource type="Texture2D" uid="uid://8jhyh5tkyf3k" path="res://resources/sprites/Player/walk/orc1_back_walk5.png" id="71_u6x8s"]
 [ext_resource type="Texture2D" uid="uid://d17yg0r5fvobb" path="res://resources/sprites/Player/walk/orc1_back_walk6.png" id="72_pgy3e"]
+[ext_resource type="Script" uid="uid://cwpks1cpl0hdc" path="res://experiments/HealthComponent.gd" id="74_lglog"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tovqk"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b8fho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_t4ot1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sktj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jjyyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w1h7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_26v87")
+}],
+"loop": true,
+"name": &"hurt_down",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_y80v1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_k7l58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_217j1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6ymy7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_deml1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_a6nhp")
+}],
+"loop": true,
+"name": &"hurt_left",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_1axsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_tbn02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_47873")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_oukap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bqo07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6aeuy")
+}],
+"loop": true,
+"name": &"hurt_right",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_f4t0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_dogdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5mhmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_bj8dl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_35r23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_jn6hw")
+}],
+"loop": true,
+"name": &"hurt_up",
+"speed": 8.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_vqxe2")
@@ -358,13 +475,19 @@ radius = 7.0
 height = 18.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 2
 script = ExtResource("1_al50v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tovqk")
-animation = &"idle_down"
+animation = &"hurt_right"
+frame = 1
+frame_progress = 0.144446
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_73u1m")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("74_lglog")

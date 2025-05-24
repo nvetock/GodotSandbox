@@ -69,7 +69,7 @@ func find_random_spawn_location(totalArea: Vector2) -> Vector2:
 ## Takes a player's choice of spawn set and reads from the "enemy_sets" json file
 ## To load in all selected enemies into the spawnables before spawning.
 ## This method should be called by an external script that allows player to choose
-func load_spawnables_from_set(set_name: String) -> bool:
+func load_spawnables_from_set(dataset_name: String) -> bool:
 	var file := FileAccess.open("res://data/enemy_sets.json", FileAccess.READ)
 	
 	if file == null:
@@ -81,11 +81,11 @@ func load_spawnables_from_set(set_name: String) -> bool:
 		push_error("Malformed JSON")
 		return false
 	
-	if not data.has(set_name):
-		push_warning("Enemy set '%s' not found in JSON" % set_name)
+	if not data.has(dataset_name):
+		push_warning("Enemy set '%s' not found in JSON" % dataset_name)
 		return false
 	
-	var paths: Array = data[set_name]
+	var paths: Array = data[dataset_name]
 	spawnables.clear()
 	
 	for path in paths:

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=4 uid="uid://dphl8rm420mxl"]
+[gd_scene load_steps=6 format=4 uid="uid://dphl8rm420mxl"]
 
 [ext_resource type="PackedScene" uid="uid://bi5gblpcpxhc5" path="res://scenes/tilemap/terrain_tilemap.tscn" id="1_hyk8p"]
 [ext_resource type="PackedScene" uid="uid://djcgtctbaf4w" path="res://scenes/common/Arena.tscn" id="2_l3cfh"]
 [ext_resource type="PackedScene" uid="uid://b0pbl8wb0ifq6" path="res://entities/pickups/item_godot.tscn" id="3_k2fmo"]
 [ext_resource type="PackedScene" uid="uid://bkrgqqpe4wr6a" path="res://entities/player/Player.tscn" id="4_l3cfh"]
+[ext_resource type="Script" uid="uid://bbepmnmylqhnx" path="res://spawner/Spawner.gd" id="5_6q06x"]
 
 [node name="main" type="Node"]
 
@@ -32,3 +33,6 @@ position = Vector2(348, 90)
 
 [node name="Item_godot3" parent="." instance=ExtResource("3_k2fmo")]
 position = Vector2(384, 237)
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("5_6q06x")

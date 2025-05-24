@@ -1,0 +1,15 @@
+{
+	"chaos_mode": [
+		"res://entities/enemies/"
+		"res://entities/enemies/"
+		"res://entities/enemies/"
+	].
+	"wave_mode": [
+		"res://entities/enemies/"
+		"res://entities/enemies/"
+	],
+	"boss_mode": [
+		"res://entities/enemies/"
+		"res://entities/enemies/"
+	]
+}

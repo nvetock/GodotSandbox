@@ -1,8 +1,10 @@
 extends CharacterBody2D
 
 @export var move_speed: int = 85
-@export var find_target_delay: float = 1.0
-@export var movement_delay: float = 2.5
+var find_target_delay_min: float = 0.2
+@export var find_target_delay_max: float = 0.6
+var movement_delay_min: float = 0.3
+@export var movement_delay_max: float = 1.2
 @export var explosion_delay: float = 1.0
 
 var last_dir: Vector2 = Vector2.ZERO
@@ -35,11 +37,12 @@ func move_to_target(direction: Vector2, speed: int) -> void:
 	while chase_mode:
 		velocity = Vector2.ZERO
 		last_target_location = direction_to_target(player)
+		var find_target_delay: float = randf_range(find_target_delay_min, find_target_delay_max)
 		await get_tree().create_timer(find_target_delay).timeout
 		
 		last_dir = last_target_location
 		velocity = last_target_location * move_speed
-		
+		var movement_delay: float = randf_range(movement_delay_min, movement_delay_max)
 		await get_tree().create_timer(movement_delay).timeout
 
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=141 format=3 uid="uid://bgdt2vmm8bssw"]
 
-[ext_resource type="Script" uid="uid://b4erx0ut213ub" path="res://entities/enemies/slime2.gd" id="1_imm4b"]
+[ext_resource type="Script" uid="uid://b4erx0ut213ub" path="res://entities/enemies/Slimes/slime2.gd" id="1_imm4b"]
 [ext_resource type="Texture2D" uid="uid://p8erv5w8bmj0" path="res://resources/sprites/Slime1/Attack/Slime1_Attack_front1.png" id="2_jr3gm"]
 [ext_resource type="Texture2D" uid="uid://dhi17aoaymx1a" path="res://resources/sprites/Slime1/Attack/Slime1_Attack_front2.png" id="3_ynnfi"]
 [ext_resource type="Texture2D" uid="uid://dt2ykj6a2ca7" path="res://resources/sprites/Slime1/Attack/Slime1_Attack_front3.png" id="4_lyv0i"]

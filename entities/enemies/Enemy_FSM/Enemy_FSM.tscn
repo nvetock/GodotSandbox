@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://bshmvl3deqpdq"]
+
+[ext_resource type="Script" uid="uid://c5cty8lcecf55" path="res://entities/enemies/Enemy_FSM/enemy_fsm.gd" id="1_8u3i2"]
+[ext_resource type="Texture2D" uid="uid://bmffex8ut5b05" path="res://icon.svg" id="2_y4e0l"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_paah2"]
+height = 26.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_82qr8"]
+radius = 70.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d04nd"]
+size = Vector2(48, 48)
+
+[node name="Enemy_FSM" type="CharacterBody2D"]
+script = ExtResource("1_8u3i2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_y4e0l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_paah2")
+
+[node name="PlayerDetector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetector"]
+shape = SubResource("CircleShape2D_82qr8")
+
+[node name="AttackDetector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackDetector"]
+shape = SubResource("RectangleShape2D_d04nd")
+
+[node name="AttackCooldown" type="Timer" parent="."]

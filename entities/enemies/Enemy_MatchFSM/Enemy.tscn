@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://enmmhwucnog0"]
 
-[ext_resource type="Script" uid="uid://0tgwhsyroeaj" path="res://entities/enemies/enemy.gd" id="1_nwexf"]
+[ext_resource type="Script" uid="uid://0tgwhsyroeaj" path="res://entities/enemies/Enemy_MatchFSM/enemy.gd" id="1_nwexf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_paah2"]
 height = 26.0

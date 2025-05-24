@@ -1,7 +1,7 @@
 extends Node
 
 var items_collected: int = 0
-var player_health: int = 3
+var _player_health: int = 3
 var is_game_paused: bool = false
 
 
@@ -24,9 +24,25 @@ func register_item(item: Node):
 	# When item's collected() signal is called it will be triggering Game Managers function to call in response
 
 
+func lose_health(amount: int) -> void:
+	_player_health -= amount
+
+func gain_health(amount: int) -> void:
+	_player_health += amount
+
 func reset_game_state() -> void:
 	items_collected = 0
-	player_health = 3
+	_player_health = 3
+
+func game_over() -> void:
+	pass
+
+
+
+
+# -------------------------------------------------------- #
+# ------------------ SIGNAL EVENTS ----------------------- #
+# -------------------------------------------------------- #
 
 func _on_item_collected(value: int):
 	items_collected += value

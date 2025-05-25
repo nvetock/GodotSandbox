@@ -18,7 +18,7 @@ func update(owner, delta):
 		await owner.get_tree().create_timer(0.3).timeout
 		
 		print(owner.name + " attacking!")
-		var p_health = owner.player.get_node("HealthComponent")
+W		var p_health = owner.player.get_node("HealthComponent")
 		p_health.take_damage(1)
 	
 		owner.attack_cooldown.start()

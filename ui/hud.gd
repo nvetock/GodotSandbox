@@ -1,4 +1,4 @@
-extends Node
+extends CanvasLayer
 
 var health_icons_paths: Array[String] = [
 	"res://resources/ui/health_0.png",
@@ -35,6 +35,8 @@ func _ready() -> void:
 	
 	# connect a signal listener for player being damaged
 
+func _process(delta: float) -> void:
+	pass
 
 
 func update_health_icon(health: int) -> void:

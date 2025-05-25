@@ -42,4 +42,4 @@ script = ExtResource("5_6q06x")
 [node name="Enemy_FSM" parent="." instance=ExtResource("7_hujxm")]
 position = Vector2(44, 296)
 
-[node name="Hud" parent="." instance=ExtResource("8_yyfjg")]
+[node name="CanvasLayer" parent="." instance=ExtResource("8_yyfjg")]

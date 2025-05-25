@@ -488,6 +488,7 @@ frame_progress = 0.144446
 shape = SubResource("CapsuleShape2D_73u1m")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
 
 [node name="HealthComponent" type="Node" parent="."]
 script = ExtResource("74_lglog")

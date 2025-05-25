@@ -11,16 +11,20 @@ func _ready() -> void:
 	current_health = max_health
 
 func take_damage(amount: int) -> void:
-	#current_health = clamp(current_health - amount, 0, max_health)
 	current_health -= amount
 	health_changed.emit(current_health)
 	
 	if current_health <= 0:
+		current_health = 0
+		print("player is dead")
 		died.emit()
 
 func heal(amount: int) -> void:
-	current_health = clamp(current_health - amount, 0, max_health)
+	current_health += amount
 	health_changed.emit(current_health)
+	
+	if current_health >= max_health:
+		current_health = max_health
 
 func is_alive() -> bool:
 	return current_health > 0

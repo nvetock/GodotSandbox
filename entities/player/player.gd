@@ -93,9 +93,6 @@ func update_animation(direction: Vector2, sprint_toggle: bool, prefix_override: 
 
 
 func _on_health_change(new_health: int) -> void:
-	print(new_health)
-	print(health.current_health)
-	
 	if new_health < health.current_health:
 		update_animation(last_facing_direction, false, true, "hurt")
 		await get_tree().create_timer(0.1).timeout
